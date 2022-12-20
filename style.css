@@ -1,0 +1,192 @@
+body{
+    background-color: bisque;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 30fr 105fr;
+    min-height: 1000px;
+    margin-left: 160px;
+    margin-right: 173px;
+    box-shadow: 0px 0px 45px black;
+}
+.left-section{
+    width: 300px;
+    height: 1000px;
+    background-color: rgb(60, 61, 61);
+}
+.right-section{
+    width: 700px;
+    height: 1000px;
+    background-color: rgb(5, 57, 70);
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-details img{
+    display: block;
+    margin: auto;
+    border: solid 5px white;
+    border-radius: 30%;
+    width: 60%;
+}
+#name{
+    font-size: 1.2rem;
+    width: 700;
+    text-align: center;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    letter-spacing: 0.02px;
+    color: rgb(238, 207, 121);
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 0px 2px white;
+}
+#desig{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    color: rgb(236, 231, 231);
+    letter-spacing: 0.6px;
+    text-shadow: 0px 0px 2px white;
+    margin-top: 10%;
+}
+.contact-item{
+    /* background-color: blueviolet; */
+    padding: 0.5rem;
+    margin-top: 10%;
+}
+.contact_icons{
+    padding-left: 10%;
+}
+.icon{
+    list-style: none;
+    display: inline;
+    padding: 0.5rem;
+}
+.icon img{
+    width: 15%;
+    /* padding-left: 17%; */
+}
+.prsnl_contact{
+    margin-top: 3.2rem;
+    /* background-color: aqua; */
+    display: inline-block;
+    width: 10%;
+    float: left;
+}
+.icon2{
+    list-style: none;
+    margin-bottom: 45%;
+    /* background-color: black; */
+}
+.prsnl_contact img{
+    width: 100%;
+    /* background-color: blue; */
+}
+.desc{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(247, 241, 241);
+    letter-spacing: 0.6px;
+    text-shadow: 0px 0px 2px white;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    line-height: 1.5;
+}
+.contact_links{
+    margin-top: 3.2rem;
+    margin-left: 13.9%;
+}
+.link{
+    margin-bottom: 12.5%;
+}
+.link a{
+    text-decoration: none;
+    color: rgb(184, 186, 187);
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: rgb(224, 223, 210);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 0 2px white;
+    margin-top: -1%;
+}
+.skill-name{
+    /* padding-top: 0.5rem; */
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    color: aliceblue;
+    margin-left: 7%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.progress-bar{
+    border: solid 1px white;
+    height: 4px;    
+    margin-bottom: 15%;
+    margin-left: 7%;
+    width: 80%;
+}
+progress::-webkit-progress-bar {
+    background-color: #050505;
+}
+progress::-webkit-progress-value {
+    background-color: white !important;
+}
+
+/* Right content */
+
+.right-main-content{
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    color: rgb(223, 240, 68);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.answer{
+    color: white;
+    margin-top: -2%;
+    margin-bottom: 5%;
+    margin-left: 1.7%;
+    margin-right: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 673px) {
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 7.5%;
+        /* text-align: center; */
+    }
+    .right-section{
+        margin-right: 0%;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 20px black;
+    }
+    .right-main-content .right-title{
+        /* margin-left: -7%; */
+        text-align: center;
+    }
+    .left-section{
+        box-shadow: 0px 0px 20px black;
+    }
+}
